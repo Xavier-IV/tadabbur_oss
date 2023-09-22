@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blob {
+    filter: blur(40px);
+    position: absolute;
+    @apply opacity-0 transition-opacity duration-300;
+    @apply absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(1, 172, 154, 0.5);
+}
